@@ -1,0 +1,38 @@
+{
+  "name": "infra-renovate-config",
+  "description": "Docker presets for Renovate",
+  "author": "Pager Platform Team <containers@pager.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/pagerinc/infra-renovate-config",
+  "bugs": {
+    "url": "https://github.com/pagerinc/infra-renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "renovate-config": {
+    "disable": {
+      "docker": {
+        "enabled": true
+      },
+      "docker-compose": {
+        "enabled": true
+      },
+      "circleci": {
+        "enabled": false
+      }
+    },
+    "enableMajor": {
+      "docker": {
+        "major": {
+          "enabled": true
+        }
+      }
+    },
+    "disableMajor": {
+      "docker": {
+        "major": {
+          "enabled": false
+        }
+      }
+    }
+  }
+}

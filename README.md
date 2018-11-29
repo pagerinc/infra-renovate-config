@@ -1,2 +1,4 @@
 # infra-renovate-config
-Renovate bot infra settings
+Renovate bot Docker presets
+
+This directory contains docker presets - kind of a catch-all.
