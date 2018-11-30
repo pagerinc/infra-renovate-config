@@ -9,11 +9,11 @@
   },
   "version": "0.0.1",
   "renovate-config": {
-    "extends": {
+    "extends": [
       "config:base",
       ":semanticCommitTypeAll(chore)",
       ":preserveSemverRanges"
-    },
+    ],
     "labels": ["chore"],
     "disable": {
       "docker": {
