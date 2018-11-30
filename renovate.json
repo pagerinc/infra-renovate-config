@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommitTypeAll(chore)",
+    ":preserveSemverRanges"
+  ],
+  "labels": ["chore"],
+  "disable": {
+    "docker": {
+      "enabled": true
+    },
+    "docker-compose": {
+      "enabled": true
+    },
+    "circleci": {
+      "enabled": false
+    }
+  },
+  "enableMajor": {
+    "docker": {
+      "major": {
+        "enabled": true
+      }
+    }
+  },
+  "disableMajor": {
+    "docker": {
+      "major": {
+        "enabled": false
+      }
+    }
+  }
+}
