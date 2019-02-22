@@ -1,33 +1,26 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommitTypeAll(chore)",
-    ":preserveSemverRanges"
+    "docker:enableMajor"
   ],
+ "semanticCommitScope": "deps",
   "labels": ["chore"],
-  "disable": {
-    "docker": {
-      "enabled": true
-    },
-    "docker-compose": {
-      "enabled": true
-    },
-    "circleci": {
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  },
+  "docker": {
+    "pinDigests": true,
+    "semanticCommitType": "build"
+  },
+  "docker-compose": {
+    "digest": {
       "enabled": false
     }
   },
-  "enableMajor": {
-    "docker": {
-      "major": {
-        "enabled": true
-      }
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "build"
     }
-  },
-  "disableMajor": {
-    "docker": {
-      "major": {
-        "enabled": false
-      }
-    }
-  }
+  ]
 }
