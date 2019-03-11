@@ -29,18 +29,22 @@
     },
     {
       "packagePatterns": ["newrelic", "metrics-client"],
-      "groupName": "metrics"
+      "groupName": "metrics",
+      "allowedVersions": ">5.2",
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
-      "packagePatterns": ["lab", "code", "sinon", "mocha"],
+      "packageNames": ["lab", "code", "sinon", "mocha"],
       "groupName": "testing"
     },
     {
       "packagePatterns": ["eslint"],
-      "groupName": "linters"
+      "groupName": "linters",
+      "automerge": true
     },
     {
-      "packagePatterns": ["hapi", "boom", "joi", "hoek", "wreck"],
+      "packageNames": ["hapi", "boom", "joi", "hoek", "wreck"],
       "groupName": "hapi"
     }
   ]
