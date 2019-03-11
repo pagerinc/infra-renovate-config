@@ -21,6 +21,18 @@
     {
       "depTypeList": ["dependencies"],
       "semanticCommitType": "build"
+    },
+    {
+      "packagePatterns": ["newrelic", "metrics-client"],
+      "groupName": "metrics"
+    },
+    {
+      "packagePatterns": ["lab", "code", "sinon"],
+      "groupName": "testing"
+    },
+    {
+      "packagePatterns": ["hapi", "boom", "joi"],
+      "groupName": "hapi"
     }
   ]
 }
