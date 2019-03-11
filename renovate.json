@@ -3,7 +3,7 @@
     "config:base",
     "docker:enableMajor"
   ],
- "semanticCommitScope": "deps",
+  "semanticCommitScope": "deps",
   "labels": ["chore"],
   "vulnerabilityAlerts": {
     "labels": ["security"]
@@ -23,15 +23,24 @@
       "semanticCommitType": "build"
     },
     {
+      "packagePatterns": ["node"],
+      "groupName": "node",
+      "allowedVersions": "^10.15"
+    },
+    {
       "packagePatterns": ["newrelic", "metrics-client"],
       "groupName": "metrics"
     },
     {
-      "packagePatterns": ["lab", "code", "sinon"],
+      "packagePatterns": ["lab", "code", "sinon", "mocha"],
       "groupName": "testing"
     },
     {
-      "packagePatterns": ["hapi", "boom", "joi"],
+      "packagePatterns": ["eslint"],
+      "groupName": "linters"
+    },
+    {
+      "packagePatterns": ["hapi", "boom", "joi", "hoek", "wreck"],
       "groupName": "hapi"
     }
   ]
