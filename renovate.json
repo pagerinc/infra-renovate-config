@@ -25,6 +25,7 @@
     {
       "packagePatterns": ["node"],
       "groupName": "node",
+      "semanticCommitScope": "docker",
       "allowedVersions": "^10.15"
     },
     {
