@@ -47,8 +47,8 @@
       "groupName": "testing"
     },
     {
-      "packagePatterns": ["eslint"],
-      "groupName": "linters",
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint packages",
       "automerge": true
     },
     {
