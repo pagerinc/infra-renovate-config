@@ -8,6 +8,10 @@
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
+  "timezone": "America/New_York",
+  "schedule": [
+    "schedule:earlyMondays"
+  ],
   "docker": {
     "pinDigests": true,
     "semanticCommitType": "build"
@@ -26,7 +30,11 @@
       "packagePatterns": ["node"],
       "groupName": "node",
       "semanticCommitScope": "docker",
-      "allowedVersions": "^10.15"
+      "allowedVersions": "^10.15",
+      "schedule": [
+        "before 2am on monday",
+        "before 2am on thursday"
+      ]
     },
     {
       "packagePatterns": ["newrelic"],
