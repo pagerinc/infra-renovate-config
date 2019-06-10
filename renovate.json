@@ -43,7 +43,7 @@
       "automergeType": "branch"
     },
     {
-      "packageNames": ["lab", "code", "sinon", "mocha"],
+      "packageNames": ["lab", "code", "@hapi/lab", "@hapi/code", "sinon", "mocha"],
       "groupName": "testing"
     },
     {
@@ -52,8 +52,13 @@
       "automerge": true
     },
     {
-      "packageNames": ["hapi", "boom", "joi", "hoek", "wreck"],
-      "groupName": "hapi"
+      "packageNames": ["hapi", "boom", "good", "joi", "hoek", "wreck"],
+      "groupName": "hapi w/o module namespace"
+    },
+    {
+      "packagePatterns": ["^@hapi/"],
+      "groupName": "hapi w/ module namespace",
+      "excludePackageNames": ["@hapi/lab", "@hapi/code"]
     }
   ]
 }
