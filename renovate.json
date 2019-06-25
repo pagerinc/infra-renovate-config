@@ -8,10 +8,6 @@
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
-  "timezone": "America/New_York",
-  "schedule": [
-    "schedule:earlyMondays"
-  ],
   "docker": {
     "pinDigests": true,
     "semanticCommitType": "build"
@@ -30,11 +26,7 @@
       "packagePatterns": ["node"],
       "groupName": "node",
       "semanticCommitScope": "docker",
-      "allowedVersions": "^10.15",
-      "schedule": [
-        "before 2am on monday",
-        "before 2am on thursday"
-      ]
+      "allowedVersions": "^10.15"
     },
     {
       "packagePatterns": ["newrelic"],
@@ -44,9 +36,9 @@
       "automergeType": "branch"
     },
     {
-      "packagePatterns": ["metrics-client"],
+      "packageNames": ["@pager/metrics-client"],
       "groupName": "metrics-client",
-      "allowedVersions": ">4.0",
+      "allowedVersions": ">=4.2.1",
       "automerge": true,
       "automergeType": "branch"
     },
@@ -56,16 +48,16 @@
     },
     {
       "packagePatterns": ["^eslint"],
-      "groupName": "eslint packages",
+      "groupName": "linters",
       "automerge": true
     },
     {
       "packageNames": ["hapi", "boom", "good", "joi", "hoek", "wreck"],
-      "groupName": "hapi w/o module namespace"
+      "groupName": "hapi legacy"
     },
     {
       "packagePatterns": ["^@hapi/"],
-      "groupName": "hapi w/ module namespace",
+      "groupName": "hapi",
       "excludePackageNames": ["@hapi/lab", "@hapi/code"]
     }
   ]
