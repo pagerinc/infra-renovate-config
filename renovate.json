@@ -29,24 +29,36 @@
       "allowedVersions": "^10.15"
     },
     {
-      "packagePatterns": ["newrelic", "metrics-client"],
-      "groupName": "metrics",
+      "packagePatterns": ["newrelic"],
+      "groupName": "newrelic metrics",
       "allowedVersions": ">5.2",
       "automerge": true,
       "automergeType": "branch"
     },
     {
-      "packageNames": ["lab", "code", "sinon", "mocha"],
+      "packageNames": ["@pager/metrics-client"],
+      "groupName": "metrics-client",
+      "allowedVersions": ">=4.2.1",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packageNames": ["lab", "code", "@hapi/lab", "@hapi/code", "sinon", "mocha"],
       "groupName": "testing"
     },
     {
-      "packagePatterns": ["eslint"],
+      "packagePatterns": ["^eslint"],
       "groupName": "linters",
       "automerge": true
     },
     {
-      "packageNames": ["hapi", "boom", "joi", "hoek", "wreck"],
-      "groupName": "hapi"
+      "packageNames": ["hapi", "boom", "good", "joi", "hoek", "wreck"],
+      "groupName": "hapi legacy"
+    },
+    {
+      "packagePatterns": ["^@hapi/"],
+      "groupName": "hapi",
+      "excludePackageNames": ["@hapi/lab", "@hapi/code"]
     }
   ]
 }
