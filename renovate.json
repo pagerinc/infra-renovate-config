@@ -38,7 +38,7 @@
     {
       "packageNames": ["@pager/metrics-client"],
       "groupName": "metrics-client",
-      "allowedVersions": ">=4.2.1",
+      "allowedVersions": ">=4.3",
       "automerge": true,
       "automergeType": "branch"
     },
