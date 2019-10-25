@@ -27,7 +27,7 @@
       "packagePatterns": ["node"],
       "groupName": "node",
       "semanticCommitScope": "docker",
-      "allowedVersions": "^10.15"
+      "allowedVersions": "^12.13"
     },
     {
       "packagePatterns": ["newrelic"],
