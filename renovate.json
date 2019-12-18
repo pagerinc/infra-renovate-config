@@ -4,7 +4,7 @@
     "docker:enableMajor",
     "default:automergeDigest"
   ],
-  "branchPrefix": "renovate-",
+  "branchPrefix": "renovate_",
   "semanticCommitScope": "deps",
   "labels": ["chore"],
   "vulnerabilityAlerts": {
