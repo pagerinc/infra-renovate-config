@@ -4,6 +4,7 @@
     "docker:enableMajor",
     "default:automergeDigest"
   ],
+  "branchPrefix": "renovate_",
   "semanticCommitScope": "deps",
   "labels": ["chore"],
   "vulnerabilityAlerts": {
@@ -16,50 +17,14 @@
   "docker-compose": {
     "digest": {
       "enabled": false
-    }
+    },
+    "pinDigests": false
   },
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
-      "semanticCommitType": "build"
-    },
-    {
       "packagePatterns": ["node"],
       "groupName": "node",
-      "semanticCommitScope": "docker",
-      "allowedVersions": "^12.13"
-    },
-    {
-      "packagePatterns": ["newrelic"],
-      "groupName": "newrelic metrics",
-      "allowedVersions": ">5.2",
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "packageNames": ["@pager/metrics-client"],
-      "groupName": "metrics-client",
-      "allowedVersions": ">=4.3",
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "packageNames": ["lab", "code", "@hapi/lab", "@hapi/code", "sinon", "mocha"],
-      "groupName": "testing"
-    },
-    {
-      "packagePatterns": ["^eslint"],
-      "groupName": "linters",
-      "automerge": true
-    },
-    {
-      "packageNames": ["hapi", "boom", "good", "joi", "hoek", "wreck"],
-      "groupName": "hapi legacy"
-    },
-    {
-      "packagePatterns": ["^@hapi/"],
-      "groupName": "hapi",
-      "excludePackageNames": ["@hapi/lab", "@hapi/code"]
+      "semanticCommitScope": "docker"
     }
   ]
 }
