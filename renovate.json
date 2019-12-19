@@ -7,6 +7,8 @@
   "branchPrefix": "renovate_",
   "semanticCommitScope": "deps",
   "labels": ["chore"],
+  "prCreation": "not-pending",
+  "stabilityDays": 1,
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
@@ -20,12 +22,33 @@
     },
     "pinDigests": false
   },
+  "node": {
+    "supportPolicy": ["lts_latest"],
+    "semanticCommitScope": "docker",
+    "automerge": true,
+    "automergeType": "branch"
+  },
   "packageRules": [
     {
-      "packagePatterns": ["node"],
-      "groupName": "node",
-      "allowedVersions": "^12.14",
-      "semanticCommitScope": "docker"
+      "packageNames": ["postgres"],
+      "allowedVersions": "^9.6",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packageNames": ["redis"],
+      "allowedVersions": "^4",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packageNames": ["rabbitmq"],
+      "allowedVersions": "^3.8",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 }
