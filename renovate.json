@@ -31,6 +31,13 @@
   },
   "packageRules": [
     {
+      "packageNames": ["node"],
+      "allowedVersions": "^12",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "packageNames": ["postgres"],
       "allowedVersions": "^9.6",
       "semanticCommitScope": "docker",
