@@ -7,7 +7,7 @@
   "branchPrefix": "renovate_",
   "semanticCommitScope": "deps",
   "labels": ["chore"],
-  "schedule": ["after 6pm and before 8am on every weekday", "every weekend"],
+  "schedule": ["after 10pm and before 1pm on every weekday", "every weekend"],
   "prCreation": "not-pending",
   "stabilityDays": 1,
   "vulnerabilityAlerts": {
