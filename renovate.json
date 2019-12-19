@@ -13,6 +13,8 @@
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
   "docker": {
     "pinDigests": true,
     "semanticCommitType": "build"
