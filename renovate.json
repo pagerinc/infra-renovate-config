@@ -47,6 +47,13 @@
       "automergeType": "branch"
     },
     {
+      "packageNames": ["mongo"],
+      "allowedVersions": "^4.2",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "packageNames": ["redis"],
       "allowedVersions": "^4",
       "semanticCommitScope": "docker",
