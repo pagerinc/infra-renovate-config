@@ -13,6 +13,8 @@
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
   "docker": {
     "pinDigests": true,
     "semanticCommitType": "build"
@@ -40,6 +42,13 @@
     {
       "packageNames": ["postgres"],
       "allowedVersions": "^9.6",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packageNames": ["mongo"],
+      "allowedVersions": "^4.2",
       "semanticCommitScope": "docker",
       "automerge": true,
       "automergeType": "branch"
