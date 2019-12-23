@@ -33,7 +33,7 @@
   },
   "packageRules": [
     {
-      "packageNames": ["node"],
+      "packagePatterns": ["node"],
       "allowedVersions": "^12",
       "semanticCommitScope": "docker",
       "automerge": true,
@@ -42,6 +42,13 @@
     {
       "packageNames": ["postgres"],
       "allowedVersions": "^9.6",
+      "semanticCommitScope": "docker",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packageNames": ["mongo"],
+      "allowedVersions": "^4.2",
       "semanticCommitScope": "docker",
       "automerge": true,
       "automergeType": "branch"
