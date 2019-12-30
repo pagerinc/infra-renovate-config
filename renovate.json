@@ -5,6 +5,7 @@
     "default:automergeDigest"
   ],
   "branchPrefix": "renovate_",
+  "semanticCommits": true,
   "semanticCommitScope": "deps",
   "labels": ["chore"],
   "schedule": ["after 10pm and before 1pm on every weekday", "every weekend"],
