@@ -42,7 +42,7 @@
     },
     {
       "packageNames": ["postgres"],
-      "allowedVersions": "^9.6",
+      "allowedVersions": "^11",
       "semanticCommitScope": "docker",
       "automerge": true,
       "automergeType": "branch"
