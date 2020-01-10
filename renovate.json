@@ -29,51 +29,43 @@
   "node": {
     "supportPolicy": ["lts_latest"],
     "semanticCommitScope": "docker",
-    "automerge": true,
-    "automergeType": "branch"
+    "automerge": true
   },
   "packageRules": [
     {
       "packagePatterns": ["node"],
       "allowedVersions": "^12",
       "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "packageNames": ["postgres"],
       "allowedVersions": "^11",
       "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "packageNames": ["mongo"],
       "allowedVersions": "^4.2",
       "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "packageNames": ["mongo"],
-      "allowedVersions": "^4.2",
-      "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "packageNames": ["redis"],
       "allowedVersions": "^4",
       "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "packageNames": ["rabbitmq"],
       "allowedVersions": "^3.8",
       "semanticCommitScope": "docker",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["hadolint", "cloud-sdk"],
+      "semanticCommitScope": "drone",
+      "automerge": true
     }
   ]
 }
