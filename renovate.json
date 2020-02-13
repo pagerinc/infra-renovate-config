@@ -9,6 +9,7 @@
   "semanticCommitScope": "deps",
   "labels": ["chore"],
   "schedule": ["after 10pm and before 1pm on every weekday", "every weekend"],
+  "prCreation": "not-pending",
   "stabilityDays": 1,
   "vulnerabilityAlerts": {
     "labels": ["security"]
