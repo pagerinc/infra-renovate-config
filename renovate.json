@@ -8,8 +8,9 @@
   "branchPrefix": "renovate_",
   "semanticCommits": true,
   "semanticCommitScope": "deps",
-  "labels": ["chore"],
-  "schedule": ["after 10pm and before 1pm on every weekday", "every weekend"],
+  "labels": ["dependencies"],
+  "timezone": "America/New_York",
+  "schedule": ["after 6pm and before 8am on every weekday", "every weekend"],
   "stabilityDays": 1,
   "vulnerabilityAlerts": {
     "labels": ["security"]
