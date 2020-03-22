@@ -10,7 +10,7 @@
   "semanticCommitScope": "deps",
   "labels": ["dependencies"],
   "timezone": "America/New_York",
-  "schedule": ["after 6pm and before 8am on every weekday", "every weekend"],
+  "schedule": ["after 10pm and before 6am"],
   "stabilityDays": 1,
   "vulnerabilityAlerts": {
     "labels": ["security"]
