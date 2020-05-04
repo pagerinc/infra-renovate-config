@@ -11,6 +11,7 @@
   "labels": ["dependencies"],
   "timezone": "America/New_York",
   "schedule": ["before 4am", "after 11pm"],
+  "updateNotScheduled": false,
   "stabilityDays": 1,
   "vulnerabilityAlerts": {
     "labels": ["security"]
