@@ -39,7 +39,7 @@
     },
     {
       "packageNames": ["postgres"],
-      "allowedVersions": "^11",
+      "allowedVersions": "^12",
       "semanticCommitScope": "docker",
       "automerge": true
     },
@@ -51,7 +51,7 @@
     },
     {
       "packageNames": ["redis"],
-      "allowedVersions": "^4",
+      "allowedVersions": "^5",
       "semanticCommitScope": "docker",
       "automerge": true
     },
