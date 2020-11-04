@@ -33,7 +33,7 @@
   "packageRules": [
     {
       "packagePatterns": ["node"],
-      "allowedVersions": "^12",
+      "allowedVersions": "^12 || ^14",
       "semanticCommitScope": "docker",
       "automerge": true
     },
