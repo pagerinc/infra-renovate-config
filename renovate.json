@@ -27,8 +27,7 @@
   },
   "node": {
     "supportPolicy": ["lts_latest"],
-    "semanticCommitScope": "docker",
-    "automerge": true
+    "semanticCommitScope": "docker"
   },
   "packageRules": [
     {
