@@ -34,8 +34,7 @@
     {
       "packagePatterns": ["node"],
       "allowedVersions": "^14",
-      "semanticCommitScope": "docker",
-      "automerge": true
+      "semanticCommitScope": "docker"
     },
     {
       "packageNames": ["postgres"],
