@@ -26,24 +26,10 @@
     "pinDigests": true
   },
   "node": {
-    "supportPolicy": ["lts_latest"],
+    "supportPolicy": ["lts"],
     "semanticCommitScope": "docker"
   },
   "packageRules": [
-    {
-      "packagePatterns": ["node"],
-      "allowedVersions": "^14",
-      "semanticCommitScope": "docker",
-      "updateTypes": ["major"],
-      "automerge": false
-    },
-    {
-      "packagePatterns": ["node"],
-      "allowedVersions": "^14",
-      "semanticCommitScope": "docker",
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
-    },
     {
       "packageNames": ["postgres"],
       "allowedVersions": "^12",
